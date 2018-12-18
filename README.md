@@ -44,6 +44,27 @@
 -   **example**
     -   .zshrc: 示例实现
 
+## plugins 功能概述
+
+-   autojump: 支持 `j` 跳转，需安装 `autojump`
+-   extract: 解压命令，可根据扩展名自动执行相应解压命令
+-   sudo: 按两次 `ESC` 可在命令前面添加 `sudo`
+-   history: 增加几个查看历史的 alias: h, hs, hsi
+-   copydir: 输入 `copydir` 可拷贝当前所在路径
+-   copybuffer: 按 <kbd>CTRL</kbd>+<kbd>O</kbd> 可拷贝当前输入内容
+-   colored-man-pages: 给 man 页面着色
+-   zsh_reload: 提供 `src` 命令用于重载 `zsh` 配置
+-   zsh-navigation-tools: <kbd>CTRL</kbd>+<kbd>R</kbd> 可打开 history 面板，功能很多很强大
+-   zsh-syntax-highlighting: 命令着色
+-   zsh-autosuggestions: 自动建议
+
+### Mac OS X 上启用插件
+
+-   brew: 增加几个 brew 的 alias
+-   forklift: 增加几个命令用于在 forklift 中打开文件夹
+-   npm: npm 的一些 alias
+-   sublime: `st` 可打开给定文件，`stt` 可将当前所在文件夹发送到 sublime
+
 ## 更新方式
 
 -   submodule:

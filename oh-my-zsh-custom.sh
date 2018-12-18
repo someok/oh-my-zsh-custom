@@ -70,7 +70,7 @@ if [ -f "$OVERRIDE_FILE" ]; then
     source $OVERRIDE_FILE
 fi
 
-
+# 此处开始正式载入 oh-my-zsh 配置
 source $ZSH/oh-my-zsh.sh
 
 # zsh-autosuggestions
