@@ -14,6 +14,9 @@ if [ "$(uname -s)" = "Darwin" ]; then
     source ${SOMEOK_ZSH}/modules/alien/alien.zsh
 else
     ZSH_THEME="someok-linux"
+
+    # 关闭 linux 下的安全监测
+    ZSH_DISABLE_COMPFIX=true
 fi
 
 # Uncomment the following line if you want to change the command execution time
