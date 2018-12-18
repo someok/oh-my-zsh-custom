@@ -26,6 +26,10 @@
 
 > source /path/to/oh-my-zsh-custom/oh-my-zsh-custom.sh
 
+## 覆盖变量
+
+可以在根目录下创建 `override.sh`，在其中定义的内容可以覆盖默认配置。
+
 ## 目录结构
 
 -   **[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)**: 不用多说，基石
