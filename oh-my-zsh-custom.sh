@@ -1,5 +1,7 @@
-# oh-my-zsh config
-export SOMEOK_ZSH=${0:A:h}
+# oh-my-zsh custom config
+
+# root path
+SOMEOK_ZSH=${0:A:h}
 
 export ZSH=${SOMEOK_ZSH}/oh-my-zsh
 
