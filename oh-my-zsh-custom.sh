@@ -14,6 +14,7 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_CUSTOM=${SOMEOK_ZSH}/custom
 
 plugins=(
+    # oh-my-zsh 自带插件
     autojump
     extract
     sudo
@@ -21,6 +22,10 @@ plugins=(
     copydir
     copybuffer
     colored-man-pages
+    zsh_reload
+    zsh-navigation-tools
+
+    # git submodule 增加的 custom 插件
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
@@ -34,8 +39,8 @@ if [ "$(uname -s)" = "Darwin" ]; then
     # export ALIEN_THEME="red"
     # export ALIEN_THEME="blue"
     # export ALIEN_THEME="green"
-    export ALIEN_THEME="soft"
-    # export ALIEN_THEME="gruvbox"
+    # export ALIEN_THEME="soft"
+    export ALIEN_THEME="gruvbox"
 
     export ALIEN_DATE_TIME_FORMAT=%H:%M:%S # default is %r
     export USE_NERD_FONT=1
@@ -46,7 +51,7 @@ if [ "$(uname -s)" = "Darwin" ]; then
         $plugins
         brew
         forklift
-        fzf
+        # fzf
         npm
         sublime
     )
