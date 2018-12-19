@@ -1,7 +1,7 @@
 # oh-my-zsh custom config
 
 # root path
-SOMEOK_ZSH=${0:A:h}
+export SOMEOK_ZSH=${0:A:h}
 
 export ZSH=${SOMEOK_ZSH}/oh-my-zsh
 
@@ -32,19 +32,6 @@ plugins=(
 
 # linux or mac os x
 if [ "$(uname -s)" = "Darwin" ]; then
-    # mac os x
-	# theme: https://github.com/eendroroy/alien
-
-    # 可用颜色定义
-    # export ALIEN_THEME="red"
-    # export ALIEN_THEME="blue"
-    # export ALIEN_THEME="green"
-    # export ALIEN_THEME="soft"
-    export ALIEN_THEME="gruvbox"
-
-    export ALIEN_DATE_TIME_FORMAT=%H:%M:%S # default is %r
-    export USE_NERD_FONT=1
-    source ${SOMEOK_ZSH}/modules/alien/alien.zsh
 
     # mac 上专用 plugin
     plugins=(
@@ -55,17 +42,27 @@ if [ "$(uname -s)" = "Darwin" ]; then
         npm
         sublime
     )
+
+    MAC_OVERRIDE_FILE=$SOMEOK_ZSH/override/mac.sh
+    if [ -f "$MAC_OVERRIDE_FILE" ]; then
+        source $MAC_OVERRIDE_FILE
+    fi
 else
     # linux
-    ZSH_THEME="someok-linux"
+    ZSH_THEME="gruvbox"
+    # ZSH_THEME="someok-linux"
 
     # 关闭 linux 下的安全监测
     ZSH_DISABLE_COMPFIX=true
 
+    LINUX_OVERRIDE_FILE=$SOMEOK_ZSH/override/linux.sh
+    if [ -f "$LINUX_OVERRIDE_FILE" ]; then
+        source $LINUX_OVERRIDE_FILE
+    fi
 fi
 
 # 自定义覆盖 oh-my-zsh 变量
-OVERRIDE_FILE=$SOMEOK_ZSH/override.sh
+OVERRIDE_FILE=$SOMEOK_ZSH/override/override.sh
 if [ -f "$OVERRIDE_FILE" ]; then
     source $OVERRIDE_FILE
 fi

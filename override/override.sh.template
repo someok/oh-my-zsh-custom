@@ -1,0 +1,12 @@
+#
+# override.sh 示例
+#
+# 可复制并重命名本文件为 override.sh
+# 在此处配置的变量将会覆盖 oh-my-zsh-custom 的默认设置
+#
+
+echo "override default variables..."
+
+export ALIEN_THEME="green"
+
+ZSH_DISABLE_COMPFIX=true

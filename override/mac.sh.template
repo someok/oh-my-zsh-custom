@@ -1,0 +1,4 @@
+
+# source $SOMEOK_ZSH/override/alien.theme.sh
+
+source $SOMEOK_ZSH/override/powerlevel9k.theme.sh
