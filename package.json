@@ -1,0 +1,28 @@
+{
+  "name": "oh-my-zsh-custom",
+  "version": "1.0.0",
+  "description": "oh-my-zsh custom for myself",
+  "private": true,
+  "scripts": {
+    "release-version": "standard-version",
+    "release-version-dry": "standard-version --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/someok/oh-my-zsh-custom.git"
+  },
+  "keywords": [
+    "zsh",
+    "oh-my-zsh",
+    "custom"
+  ],
+  "author": "JX Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/someok/oh-my-zsh-custom/issues"
+  },
+  "homepage": "https://github.com/someok/oh-my-zsh-custom#readme",
+  "devDependencies": {
+    "standard-version": "^4.4.0"
+  }
+}
