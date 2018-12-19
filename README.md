@@ -40,7 +40,14 @@
     -   **themes**
         -   someok-linux.zsh-theme: 基于 [aphrodite-terminal-theme](https://github.com/win0err/aphrodite-terminal-theme) 的简单定制，用于 `Linux` 环境
 -   **modules**
-    -   [alien](https://github.com/eendroroy/alien): Mac OS X 下启用的 theme
+    -   [alien](https://github.com/eendroroy/alien): 集成的 theme
+    -   [powerlevel9k](https://github.com/bhilburn/powerlevel9k): 集成的 theme
+-   **override**: 用于覆盖 `oh-my-zsh-custom.sh` 中的配置
+    -   mac.sh: Mac 下可用
+    -   linux.sh: Linux 下可用
+    -   override.sh: 在 `oh-my-zsh` 实际执行前调用，优先级比 mac.sh、linux.sh 更高
+    -   \*.template: 一些模板文件，可基于此复制并去掉后缀
+    -   \*.theme.sh: 集成的几个 theme 的个性配置
 -   **example**
     -   .zshrc: 示例实现
 
