@@ -10,3 +10,6 @@
 [submodule "modules/alien"]
 	path = modules/alien
 	url = https://github.com/eendroroy/alien.git
+[submodule "modules/powerlevel9k"]
+	path = modules/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git
