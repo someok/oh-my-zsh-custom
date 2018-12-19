@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/someok/oh-my-zsh-custom/compare/v1.0.0...v1.1.0) (2018-12-19)
+
+
+### Features
+
+* 引入 standard-version 用于定义版本号 ([170ad69](https://github.com/someok/oh-my-zsh-custom/commit/170ad69))
+* override 下面增加 linux.sh, mac.sh 用于作为不同平台下初始脚本 ([f75e370](https://github.com/someok/oh-my-zsh-custom/commit/f75e370))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2018-12-19)
 
