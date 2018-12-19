@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "release-version": "standard-version",
-    "release-version-dry": "standard-version --dry-run"
+    "release-version-dry": "standard-version --dry-run",
+    "gitlog": "git log `git describe --tags --abbrev=0`..HEAD --no-merges --pretty=format:' * %Cblue%s%Creset (%an)' | grep -v 'Merge'"
   },
   "repository": {
     "type": "git",

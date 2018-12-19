@@ -23,7 +23,9 @@ plugins=(
     copybuffer
     colored-man-pages
     zsh_reload
-    zsh-navigation-tools
+
+    # 启用这个，会导致上下按钮冲突
+    # zsh-navigation-tools
 
     # git submodule 增加的 custom 插件
     zsh-syntax-highlighting
@@ -38,7 +40,7 @@ if [ "$(uname -s)" = "Darwin" ]; then
         $plugins
         brew
         forklift
-        # fzf
+        fzf
         npm
         sublime
     )
