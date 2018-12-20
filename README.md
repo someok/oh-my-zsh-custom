@@ -38,6 +38,7 @@
         -   [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
         -   [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
         -   [dircolors-material](https://github.com/zpm-zsh/dircolors-material)
+        -   [git-open](https://github.com/paulirish/git-open)
     -   **themes**
         -   someok-linux.zsh-theme: 基于 [aphrodite-terminal-theme](https://github.com/win0err/aphrodite-terminal-theme) 的简单定制，用于 `Linux` 环境
 -   **modules**
@@ -54,12 +55,10 @@
 
 ## plugins 功能概述
 
--   autojump: 支持 `j` 跳转，需安装 `autojump`
--   extract: 解压命令，可根据扩展名自动执行相应解压命令
+-   z: 支持 `z` 跳转，类似 `autojump`
+-   extract: 解压命令，可根据扩展名自动执行相应解压命令，alias 为 `x`
 -   sudo: 按两次 `ESC` 可在命令前面添加 `sudo`
 -   history: 增加几个查看历史的 alias: h, hs, hsi
--   copydir: 输入 `copydir` 可拷贝当前所在路径
--   copybuffer: 按 <kbd>CTRL</kbd>+<kbd>O</kbd> 可拷贝当前输入内容
 -   colored-man-pages: 给 man 页面着色
 -   zsh_reload: 提供 `src` 命令用于重载 `zsh` 配置
 -   zsh-navigation-tools: <kbd>CTRL</kbd>+<kbd>R</kbd> 可打开 history 面板，功能很多很强大
@@ -70,7 +69,10 @@
 ### Mac OS X 上启用插件
 
 -   brew: 增加几个 brew 的 alias
+-   copydir: 输入 `copydir` 可拷贝当前所在路径
+-   copybuffer: 按 <kbd>CTRL</kbd>+<kbd>O</kbd> 可拷贝当前输入内容
 -   forklift: 增加几个命令用于在 forklift 中打开文件夹
+-   git-open: 在 git 目录下通过 `git open` 在浏览器打开项目的 GitHub 页面
 -   npm: npm 的一些 alias
 -   sublime: `st` 可打开给定文件，`stt` 可将当前所在文件夹发送到 sublime
 

@@ -13,14 +13,18 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=${SOMEOK_ZSH}/custom
 
+# 取消 oh-my-zsh 默认的 ls colors 处理
+# 因为采用了 dircolors-material 这个第三方颜色库
+DISABLE_LS_COLORS=true
+
 plugins=(
     # oh-my-zsh 自带插件
-    autojump
     extract
     sudo
     history
     colored-man-pages
     zsh_reload
+    z
 
     # 启用这个，会导致上下按钮冲突
     # zsh-navigation-tools
@@ -42,6 +46,7 @@ if [ "$(uname -s)" = "Darwin" ]; then
         copybuffer
         forklift
         fzf
+        git-open
         npm
         sublime
     )
