@@ -53,6 +53,7 @@ if [ "$(uname -s)" = "Darwin" ]; then
         git-open
         npm
         sublime
+        vscode
     )
 
     MAC_OVERRIDE_FILE=$SOMEOK_ZSH/override/mac.sh
