@@ -37,6 +37,7 @@
     -   **plugins**
         -   [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
         -   [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+        -   [dircolors-material](https://github.com/zpm-zsh/dircolors-material)
     -   **themes**
         -   someok-linux.zsh-theme: 基于 [aphrodite-terminal-theme](https://github.com/win0err/aphrodite-terminal-theme) 的简单定制，用于 `Linux` 环境
 -   **modules**
@@ -64,6 +65,7 @@
 -   zsh-navigation-tools: <kbd>CTRL</kbd>+<kbd>R</kbd> 可打开 history 面板，功能很多很强大
 -   zsh-syntax-highlighting: 命令着色
 -   zsh-autosuggestions: 自动建议
+-   dircolors-material: 美化 `ls` 输出的列表
 
 ### Mac OS X 上启用插件
 

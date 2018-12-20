@@ -7,7 +7,4 @@ if brew list | grep coreutils > /dev/null ; then
     COREUTILS_PATH=$(brew --prefix coreutils)
     PATH="${COREUTILS_PATH}/libexec/gnubin:$PATH"
     MANPATH="${COREUTILS_PATH}/libexec/gnuman:$MANPATH"
-
-#   alias ls='ls -F --show-control-chars --color=auto'
-    eval `gdircolors -b $SOMEOK_ZSH/override/mac_dir_colors`
 fi

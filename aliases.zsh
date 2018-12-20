@@ -1,6 +1,11 @@
 alias cls='clear'
-alias ll='ls -lhF --color=auto'
-alias la='ls -lhFA --color=auto'
+
+# ls
+# ls 本身不做修改，否则可能导致部分 sh 脚本运行出错
+alias ll='ls -lhF --color --group-directories-first --time-style=+%Y-%m-%d\ %H:%M'
+alias lla='ll -A'
+alias l='ll -a'
+# ls end
 
 alias grep="grep --color=auto"
 

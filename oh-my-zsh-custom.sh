@@ -26,6 +26,7 @@ plugins=(
     # zsh-navigation-tools
 
     # git submodule 增加的 custom 插件
+    dircolors-material
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
@@ -76,4 +77,4 @@ source $ZSH/oh-my-zsh.sh
 bindkey '^ ' autosuggest-accept
 
 # 引入常用 aliases
-source ${SOMEOK_ZSH}/aliases.sh
+source ${SOMEOK_ZSH}/aliases.zsh
