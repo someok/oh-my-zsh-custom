@@ -1,10 +1,11 @@
 {
   "name": "oh-my-zsh-custom",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "oh-my-zsh custom for myself",
   "private": true,
   "scripts": {
     "release-version": "standard-version",
+    "release-version-patch": "standard-version --release-as patch",
     "release-version-dry": "standard-version --dry-run",
     "gitlog": "git log `git describe --tags --abbrev=0`..HEAD --no-merges --pretty=format:' * %Cblue%s%Creset (%an)' | grep -v 'Merge'"
   },

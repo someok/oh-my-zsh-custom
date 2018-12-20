@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/someok/oh-my-zsh-custom/compare/v1.1.1...v1.1.2) (2018-12-20)
+
+
+### Features
+
+* 覆盖 oh-my-zsh 对于 ls 的默认 alias ([216b05d](https://github.com/someok/oh-my-zsh-custom/commit/216b05d))
+* 集成 git-open 用于在浏览器中打开对应页面 ([108b251](https://github.com/someok/oh-my-zsh-custom/commit/108b251))
+* 减小历史记录数 ([5e3ae0c](https://github.com/someok/oh-my-zsh-custom/commit/5e3ae0c))
+* 升级 submodules ([255e526](https://github.com/someok/oh-my-zsh-custom/commit/255e526))
+* 修正 submodule 到 master 分支 ([7f8b63f](https://github.com/someok/oh-my-zsh-custom/commit/7f8b63f))
+* 用 z 代替 autojump ([528b274](https://github.com/someok/oh-my-zsh-custom/commit/528b274))
+* 优化 readme ([0ee9389](https://github.com/someok/oh-my-zsh-custom/commit/0ee9389))
+* 增加 dircolors-material 用于美化 ls 输出的目录 ([6347a76](https://github.com/someok/oh-my-zsh-custom/commit/6347a76))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/someok/oh-my-zsh-custom/compare/v1.1.0...v1.1.1) (2018-12-20)
 
