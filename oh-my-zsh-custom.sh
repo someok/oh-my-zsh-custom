@@ -5,6 +5,10 @@ SOMEOK_ZSH=${0:A:h}
 
 export ZSH=${SOMEOK_ZSH}/oh-my-zsh
 
+# history 数量
+export HISTFILESIZE=1000
+export HISTSIZE=1000
+
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
