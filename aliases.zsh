@@ -5,6 +5,10 @@ alias cls='clear'
 alias ll='ls -lhF --color --group-directories-first --time-style=+%Y-%m-%d\ %H:%M'
 alias lla='ll -A'
 alias l='ll -a'
+
+# 覆盖 oh-my-zsh/lib/directories.zsh 中配置
+alias la='lla'
+alias lsa='l'
 # ls end
 
 alias grep="grep --color=auto"
