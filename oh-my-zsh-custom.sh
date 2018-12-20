@@ -19,8 +19,6 @@ plugins=(
     extract
     sudo
     history
-    copydir
-    copybuffer
     colored-man-pages
     zsh_reload
 
@@ -39,6 +37,8 @@ if [ "$(uname -s)" = "Darwin" ]; then
     plugins=(
         $plugins
         brew
+        copydir
+        copybuffer
         forklift
         fzf
         npm
