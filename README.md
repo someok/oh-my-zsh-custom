@@ -74,5 +74,9 @@
 
 ## 更新方式
 
--   submodule:
+-   git 更新:
+    > git fetch && git pull
+-   submodule 更新:
     > git submodule update --remote
+-   submodule 初始化:
+    > git submodule update --init --recursive
