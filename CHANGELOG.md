@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/someok/oh-my-zsh-custom/compare/v1.1.0...v1.1.1) (2018-12-20)
+
+
+### Bug Fixes
+
+* 屏蔽 zsh-navigation-tools ([d7be0f8](https://github.com/someok/oh-my-zsh-custom/commit/d7be0f8))
+* 修正 linux 下默认 ZSH_THEME ([f1afe79](https://github.com/someok/oh-my-zsh-custom/commit/f1afe79))
+
+
+### Features
+
+* mac 下模板增加 coreutils 配置 ([4a28341](https://github.com/someok/oh-my-zsh-custom/commit/4a28341))
+* mac 下增加 dir colors ([4906870](https://github.com/someok/oh-my-zsh-custom/commit/4906870))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/someok/oh-my-zsh-custom/compare/v1.0.0...v1.1.0) (2018-12-19)
 

@@ -1,6 +1,6 @@
 {
   "name": "oh-my-zsh-custom",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "oh-my-zsh custom for myself",
   "private": true,
   "scripts": {
