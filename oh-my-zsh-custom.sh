@@ -51,8 +51,7 @@ if [ "$(uname -s)" = "Darwin" ]; then
     fi
 else
     # linux
-    ZSH_THEME="gruvbox"
-    # ZSH_THEME="someok-linux"
+    ZSH_THEME="someok-linux"
 
     # 关闭 linux 下的安全监测
     ZSH_DISABLE_COMPFIX=true
