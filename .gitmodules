@@ -16,3 +16,6 @@
 [submodule "custom/plugins/dircolors-material"]
 	path = custom/plugins/dircolors-material
 	url = https://github.com/zpm-zsh/dircolors-material.git
+[submodule "custom/plugins/git-open"]
+	path = custom/plugins/git-open
+	url = https://github.com/paulirish/git-open.git
