@@ -81,6 +81,6 @@
 -   git 更新:
     > git fetch && git pull
 -   submodule 更新:
-    > git submodule update --remote
+    > git submodule update --remote --recursive
 -   submodule 初始化:
     > git submodule update --init --recursive
