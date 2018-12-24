@@ -3,8 +3,13 @@
 
 source $SOMEOK_ZSH/override/powerlevel9k.theme.sh
 
-if brew list | grep coreutils > /dev/null ; then
-    COREUTILS_PATH=$(brew --prefix coreutils)
-    PATH="${COREUTILS_PATH}/libexec/gnubin:$PATH"
-    MANPATH="${COREUTILS_PATH}/libexec/gnuman:$MANPATH"
-fi
+# 为优化启动速度，下面功能最好屏蔽，直接在 .zshrc 中写死
+#
+# PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+# MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+#
+# if brew list | grep coreutils > /dev/null ; then
+#     COREUTILS_PATH=$(brew --prefix coreutils)
+#     PATH="${COREUTILS_PATH}/libexec/gnubin:$PATH"
+#     MANPATH="${COREUTILS_PATH}/libexec/gnuman:$MANPATH"
+# fi
