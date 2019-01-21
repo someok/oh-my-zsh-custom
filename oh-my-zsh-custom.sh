@@ -14,6 +14,10 @@ export HISTSIZE=1000
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
 
+# 关闭自动更新
+DISABLE_AUTO_UPDATE=true
+
+
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=${SOMEOK_ZSH}/custom
 
