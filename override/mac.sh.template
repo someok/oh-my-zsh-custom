@@ -1,6 +1,4 @@
 
-# source $SOMEOK_ZSH/override/alien.theme.sh
-
 source $SOMEOK_ZSH/override/powerlevel9k.theme.sh
 
 # 为优化启动速度，下面功能最好屏蔽，直接在 .zshrc 中写死
