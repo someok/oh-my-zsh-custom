@@ -16,3 +16,6 @@
 [submodule "custom/plugins/git-open"]
 	path = custom/plugins/git-open
 	url = https://github.com/paulirish/git-open.git
+[submodule "modules/powerlevel10k"]
+	path = modules/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

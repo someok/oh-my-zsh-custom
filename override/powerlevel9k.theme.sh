@@ -39,4 +39,5 @@ POWERLEVEL9K_DIR_ETC_BACKGROUND='202'
 POWERLEVEL9K_STATUS_OK_BACKGROUND='240'
 POWERLEVEL9K_TIME_BACKGROUND='152'
 
-source $SOMEOK_ZSH/modules/powerlevel9k/powerlevel9k.zsh-theme
+# source $SOMEOK_ZSH/modules/powerlevel9k/powerlevel9k.zsh-theme
+source $SOMEOK_ZSH/modules/powerlevel10k/powerlevel9k.zsh-theme
