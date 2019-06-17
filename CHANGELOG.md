@@ -1,6 +1,15 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.2.1](https://github.com/someok/oh-my-zsh-custom/compare/v1.2.0...v1.2.1) (2019-06-17)
+
+
+### Features
+
+* 升级 standard-version ([c98ff22](https://github.com/someok/oh-my-zsh-custom/commit/c98ff22))
+
+
 
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/someok/oh-my-zsh-custom/compare/v1.1.2...v1.2.0) (2019-05-23)
