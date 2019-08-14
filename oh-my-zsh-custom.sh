@@ -49,15 +49,12 @@ if [ "$(uname -s)" = "Darwin" ]; then
     # mac 上专用 plugin
     plugins=(
         $plugins
-        brew
         copydir
         copybuffer
         forklift
         fzf
         git-open
-        npm
         sublime
-        vscode
         z
     )
 
