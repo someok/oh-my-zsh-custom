@@ -5,9 +5,9 @@
 采用的是 `git submodule` 来维护，包括 `oh-my-zsh`，之所以这么搞，主要是手头有多台 linux 需要维护，
 每台机器、每个用户都配置一遍比较麻烦，索性将个人常用的工具都打包在一起，简化一下配置。
 
-这么搞的好处是只需要在 clone 一份，然后在各个用户的 `.zshrc` 下面配置一下 source 指向即可。具体可参加下面的 `安装步骤`。
+这么搞的好处是只需要在 clone 一份，然后在各个用户的 `.zshrc` 下面配置一下 source 指向即可。具体可参见下面的 `安装步骤`。
 
-配置很简单，具体可参加 [oh-my-zsh-custom.sh](oh-my-zsh-custom.sh)
+配置很简单，具体可参见 [oh-my-zsh-custom.sh](oh-my-zsh-custom.sh)
 
 ## Requirements
 
@@ -43,7 +43,7 @@
         -   someok-linux.zsh-theme: 基于 [aphrodite-terminal-theme](https://github.com/win0err/aphrodite-terminal-theme) 的简单定制，用于 `Linux` 环境
 -   **modules**
     -   [alien](https://github.com/eendroroy/alien): 集成的 theme
-    -   [powerlevel9k](https://github.com/bhilburn/powerlevel9k): 集成的 theme
+    -   [powerlevel10k](https://github.com/romkatv/powerlevel10k): 集成的 theme
 -   **override**: 用于覆盖 `oh-my-zsh-custom.sh` 中的配置
     -   mac.sh: Mac 下可用
     -   linux.sh: Linux 下可用
