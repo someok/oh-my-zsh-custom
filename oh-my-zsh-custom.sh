@@ -31,7 +31,11 @@ plugins=(
     history
     colored-man-pages
     zsh_reload
-    # z
+    z
+
+    copydir
+    copyfile
+    copybuffer
 
     # 启用这个，会导致上下按钮冲突
     # zsh-navigation-tools
@@ -48,13 +52,8 @@ if [ "$(uname -s)" = "Darwin" ]; then
     # mac 上专用 plugin
     plugins=(
         $plugins
-        copydir
-        copybuffer
-        forklift
-        fzf
         git-open
         sublime
-        z
     )
 
     MAC_OVERRIDE_FILE=$SOMEOK_ZSH/override/mac.sh
