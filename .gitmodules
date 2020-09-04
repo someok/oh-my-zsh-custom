@@ -7,9 +7,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "modules/powerlevel9k"]
-	path = modules/powerlevel9k
-	url = https://github.com/bhilburn/powerlevel9k.git
 [submodule "custom/plugins/git-open"]
 	path = custom/plugins/git-open
 	url = https://github.com/paulirish/git-open.git
