@@ -19,3 +19,6 @@
 [submodule "modules/powerlevel10k"]
 	path = modules/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "custom/plugins/material-colors"]
+	path = custom/plugins/material-colors
+	url = https://github.com/zpm-zsh/material-colors.git

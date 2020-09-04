@@ -6,6 +6,8 @@ alias ll='ls -lhF --color --group-directories-first --time-style=+%Y-%m-%d\ %H:%
 alias lla='ll -A'
 alias l='ll -a'
 
+alias ls='ls --color'
+
 # 覆盖 oh-my-zsh/lib/directories.zsh 中配置
 alias la='lla'
 alias lsa='l'

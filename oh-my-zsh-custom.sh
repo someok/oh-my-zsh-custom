@@ -17,12 +17,11 @@ HIST_STAMPS="yyyy-mm-dd"
 # 关闭自动更新
 DISABLE_AUTO_UPDATE=true
 
-
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=${SOMEOK_ZSH}/custom
 
 # 取消 oh-my-zsh 默认的 ls colors 处理
-# 因为采用了 dircolors-material 这个第三方颜色库
+# 因为采用了 material-colors 这个第三方颜色库
 DISABLE_LS_COLORS=true
 
 plugins=(
@@ -38,7 +37,7 @@ plugins=(
     # zsh-navigation-tools
 
     # git submodule 增加的 custom 插件
-    dircolors-material
+    material-colors
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
