@@ -36,3 +36,4 @@ alias -g NE="2> /dev/null"
 alias -g NUL="> /dev/null 2>&1"
 
 alias t2='txt-to'
+alias qs='open -a QSpace'
