@@ -40,11 +40,14 @@ plugins=(
     # 启用这个，会导致上下按钮冲突
     # zsh-navigation-tools
 
-    # git submodule 增加的 custom 插件
-    # 由于启动时会报错误信息，暂时屏蔽
-    # material-colors
+    # git submodule 增加的 custom 插件 >>>>>
+
+    # colors 是 material-colors 的依赖，没有会报错
+    colors
+    material-colors
     zsh-syntax-highlighting
     zsh-autosuggestions
+    # <<<<<<
 )
 
 # linux or mac os x

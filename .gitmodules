@@ -16,3 +16,6 @@
 [submodule "custom/plugins/material-colors"]
 	path = custom/plugins/material-colors
 	url = https://github.com/zpm-zsh/material-colors.git
+[submodule "custom/plugins/colors"]
+	path = custom/plugins/colors
+	url = https://github.com/zpm-zsh/colors.git

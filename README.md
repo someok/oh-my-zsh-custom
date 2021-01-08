@@ -92,3 +92,5 @@
     > git submodule update --remote --recursive
 -   submodule 初始化:
     > git submodule update --init --recursive
+-   submodule 添加示例
+    > git submodule add https://github.com/zpm-zsh/colors.git custom/plugins/colors
