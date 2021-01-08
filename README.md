@@ -76,9 +76,7 @@
 ## Powerlevel10k 配置
 
 新版 Powerlevel10k 增加了配置向导功能 `p10k configure`，完成之后会在生成 `~/.p10k.zsh`，将其拷贝到
-`override/powerlevel10k.theme.sh` 中，在最后再增加一行：
-
-> source $SOMEOK_ZSH/modules/powerlevel10k/powerlevel10k.zsh-theme
+`override/powerlevel10k.theme.sh`。
 
 在 `.zshrc` 最后找的相应配置，然后删除。
 
