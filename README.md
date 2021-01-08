@@ -73,6 +73,19 @@
 -   git-open: 在 git 目录下通过 `git open` 在浏览器打开项目的 GitHub 页面
 -   sublime: `st` 可打开给定文件，`stt` 可将当前所在文件夹发送到 sublime
 
+## Powerlevel10k 配置
+
+新版 Powerlevel10k 增加了配置向导功能 `p10k configure`，完成之后会在生成 `~/.p10k.zsh`，将其拷贝到
+`override/powerlevel10k.theme.sh` 中，在最后再增加一行：
+
+> source $SOMEOK_ZSH/modules/powerlevel10k/powerlevel10k.zsh-theme
+
+在 `.zshrc` 最后找的相应配置，然后删除。
+
+最后执行 `zsh` 重置配置即可。
+
+另： `override/powerlevel9k.theme.sh` 为旧版配置，暂时保留，以后酌情删除。
+
 ## 更新方式
 
 -   git 更新:
