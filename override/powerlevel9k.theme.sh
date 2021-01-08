@@ -1,6 +1,17 @@
 #
 # theme: https://github.com/bhilburn/powerlevel9k
 #
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# 由于 material-colors.plugin.zsh 会在初始报错：
+# /Users/wjx/MyFolder/Develop/MyWorkspace/_config/oh-my-zsh-custom/custom/plugins/material-colors/material-colors.plugin.zsh:44: substring expression: -1 < 2
+# 导致 powerlevel10k 会出现一堆提示，下面这个用来屏蔽提示
+# typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 POWERLEVEL9K_MODE='nerdfont-complete'
 
@@ -40,4 +51,4 @@ POWERLEVEL9K_STATUS_OK_BACKGROUND='240'
 POWERLEVEL9K_TIME_BACKGROUND='152'
 
 # source $SOMEOK_ZSH/modules/powerlevel9k/powerlevel9k.zsh-theme
-source $SOMEOK_ZSH/modules/powerlevel10k/powerlevel9k.zsh-theme
+source $SOMEOK_ZSH/modules/powerlevel10k/powerlevel10k.zsh-theme

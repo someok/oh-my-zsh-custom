@@ -41,7 +41,8 @@ plugins=(
     # zsh-navigation-tools
 
     # git submodule 增加的 custom 插件
-    material-colors
+    # 由于启动时会报错误信息，暂时屏蔽
+    # material-colors
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
