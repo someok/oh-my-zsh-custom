@@ -33,9 +33,17 @@ plugins=(
     zsh_reload
     z
 
+    # `copydir` to copy the $PWD.
     copydir
+
+    # `copyfile <filename>` to copy the file named `filename`
     copyfile
+
+    # 使用 ctrl+o 拷贝当前命令
     copybuffer
+
+    # 类似 cd，不过可以记录历史，使用 scd -v 可方便切换
+    scd
 
     # 启用这个，会导致上下按钮冲突
     # zsh-navigation-tools
@@ -58,6 +66,26 @@ if [ "$(uname -s)" = "Darwin" ]; then
         $plugins
         git-open
         sublime
+
+        # 自动查找当前目录是否存在 gradlew 或是全局安装的 gradle
+        # 支持自动完成
+        gradle
+
+        # 通过 ccat、cless 高亮显示文件，需预先安装 pip install Pygments
+        colorize
+
+        # SDKMAN 自动提示
+        sdk
+
+        # 可以通过一些命令打开或返回 finder 路径
+        # 例如
+        #   ofd: 通过 finder 打开当前目录
+        #   pfd: 返回当前 finder 打开的路径
+        #   pfs: 返回当前 finder 选择的路径或文件
+        #   cdf: 进入当前 finder 所在路径
+        #   quick-look: 指定文件
+        #   man-preview: 使用预览打开 man page
+        osx
     )
 
     MAC_OVERRIDE_FILE=$SOMEOK_ZSH/override/mac.sh
