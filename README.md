@@ -42,7 +42,6 @@
     -   **themes**
         -   someok-linux.zsh-theme: 基于 [aphrodite-terminal-theme](https://github.com/win0err/aphrodite-terminal-theme) 的简单定制，用于 `Linux` 环境
 -   **modules**
-    -   [alien](https://github.com/eendroroy/alien): 集成的 theme
     -   [powerlevel10k](https://github.com/romkatv/powerlevel10k): 集成的 theme
 -   **override**: 用于覆盖 `oh-my-zsh-custom.sh` 中的配置
     -   mac.sh: Mac 下可用
