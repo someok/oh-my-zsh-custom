@@ -19,3 +19,6 @@
 [submodule "custom/plugins/colors"]
 	path = custom/plugins/colors
 	url = https://github.com/zpm-zsh/colors.git
+[submodule "custom/plugins/history-search-multi-word"]
+	path = custom/plugins/history-search-multi-word
+	url = https://github.com/zdharma/history-search-multi-word.git
