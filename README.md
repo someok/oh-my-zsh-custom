@@ -71,6 +71,11 @@
 
 -   git-open: 在 git 目录下通过 `git open` 在浏览器打开项目的 GitHub 页面
 -   sublime: `st` 可打开给定文件，`stt` 可将当前所在文件夹发送到 sublime
+-   gradle: 支持 `gradle` 自动完成
+-   colorize: 通过 ccat、cless 高亮显示文件，需预先安装 pip install Pygments
+-   sdk: SDKMAN 自动提示
+-   osx: 可以通过一些命令打开或返回 finder 路径
+-   youtube-dl: `youtube-dl` 一些简便 `alias`
 
 ## Powerlevel10k 配置
 
