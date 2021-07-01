@@ -99,6 +99,8 @@ if [ "$(uname -s)" = "Darwin" ]; then
         #   quick-look: 指定文件
         #   man-preview: 使用预览打开 man page
         osx
+
+        youtube-dl
     )
 
     MAC_OVERRIDE_FILE=$SOMEOK_ZSH/override/mac.sh
