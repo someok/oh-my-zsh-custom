@@ -44,6 +44,9 @@ alias -g NUL="> /dev/null 2>&1"
 alias t2='txt-to'
 alias qs='open -a QSpace'
 
+# youtube-dl
+alias yd='youtube-dl -f bestvideo+bestaudio'
+
 # Make zsh know about hosts already accessed by SSH
 zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
