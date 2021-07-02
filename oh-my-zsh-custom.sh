@@ -57,6 +57,9 @@ plugins=(
     # 类似 cd，不过可以记录历史，使用 scd -v 可方便切换
     scd
 
+    # 提供 cpv 命令，作为 rsync 的缩写
+    cp
+
     # 启用这个，会导致上下按钮冲突
     # zsh-navigation-tools
 
