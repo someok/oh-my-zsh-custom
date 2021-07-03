@@ -71,6 +71,9 @@ plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
     history-search-multi-word
+
+    # cht.sh
+    cheatsh
     # <<<<<<
 )
 
