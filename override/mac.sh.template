@@ -1,13 +1,12 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-source $SOMEOK_ZSH/override/powerlevel9k.theme.sh
+# 通过 p10k configure 生成
+source $SOMEOK_ZSH/override/powerlevel10k.theme.sh
 
-# 为优化启动速度，下面功能最好屏蔽，直接在 .zshrc 中写死
-#
-# PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-# MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-#
-# if brew list | grep coreutils > /dev/null ; then
-#     COREUTILS_PATH=$(brew --prefix coreutils)
-#     PATH="${COREUTILS_PATH}/libexec/gnubin:$PATH"
-#     MANPATH="${COREUTILS_PATH}/libexec/gnuman:$MANPATH"
-# fi
+# 使得 Powerlevel10k 配置在 oh-my-zsh 中起效
+source $SOMEOK_ZSH/modules/powerlevel10k/powerlevel10k.zsh-theme
