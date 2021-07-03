@@ -66,6 +66,7 @@
 -   copydir: 输入 `copydir` 可拷贝当前所在路径
 -   copyfile: 输入 `copyfile <filepath>` 拷贝给定文件内容到剪贴板
 -   copybuffer: 按 <kbd>CTRL</kbd>+<kbd>O</kbd> 可拷贝当前输入内容
+-   cheatsh: 增加 `cht.sh` 命令用于展示 linux 命令介绍，具体参见 [cht.sh](https://cht.sh/)
 
 ### Mac OS X 上启用插件
 
@@ -75,7 +76,7 @@
 -   colorize: 通过 ccat、cless 高亮显示文件，需预先安装 pip install Pygments
 -   sdk: SDKMAN 自动提示
 -   osx: 可以通过一些命令打开或返回 finder 路径
--   youtube-dl: `youtube-dl` 一些简便 `alias`
+-   youtube-dl: `youtube-dl` 的一些 `alias`，另外增加命令 `ydf` 用于载入所有可选编码
 
 ## Powerlevel10k 配置
 
