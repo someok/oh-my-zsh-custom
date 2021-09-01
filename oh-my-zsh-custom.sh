@@ -86,6 +86,8 @@ if [ "$(uname -s)" = "Darwin" ]; then
         git-open
         sublime
 
+        docker
+
         # 自动查找当前目录是否存在 gradlew 或是全局安装的 gradle
         # 支持自动完成
         gradle
