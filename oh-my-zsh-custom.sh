@@ -42,7 +42,6 @@ plugins=(
     sudo
     history
     colored-man-pages
-    zsh_reload
     z
 
     # `copydir` to copy the $PWD.
