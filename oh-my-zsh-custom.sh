@@ -70,10 +70,13 @@ plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
     history-search-multi-word
+    # <<<<<<
 
     # cht.sh
     cheatsh
-    # <<<<<<
+
+    # ssh 自动完成
+    ssh_config
 )
 
 # linux or mac os x
