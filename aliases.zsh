@@ -30,6 +30,10 @@ alias ff='find . -type f -name'
 
 alias t='tail -f'
 
+# ffmpeg
+# 显示音视频格式详细
+alias ffformat='ffprobe -v error -show_format'
+
 # Command line head / tail shortcuts
 alias -g H='| head'
 alias -g T='| tail'
@@ -40,13 +44,6 @@ alias -g LL="2>&1 | less"
 alias -g CA="2>&1 | cat -A"
 alias -g NE="2> /dev/null"
 alias -g NUL="> /dev/null 2>&1"
-
-# ffmpeg
-# 显示音视频格式详细
-alias ffformat='ffprobe -v error -show_format'
-
-# Make zsh know about hosts already accessed by SSH
-zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
 if [ -n "$OS_MAC" ]; then
     function free() {
