@@ -142,7 +142,10 @@ source $ZSH/oh-my-zsh.sh
 
 # zsh-autosuggestions
 # [ctrl + space]
+# 此快捷键目前出现问题,不起作用,暂时不知是被谁占用了
 bindkey '^ ' autosuggest-accept
+# [ctrl + j]
+bindkey '^j' autosuggest-accept
 
 # 引入常用 aliases
 source ${SOMEOK_ZSH}/aliases.zsh
