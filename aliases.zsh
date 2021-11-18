@@ -30,6 +30,10 @@ alias ff='find . -type f -name'
 
 alias t='tail -f'
 
+# ffmpeg
+# 显示音视频格式详细
+alias ffformat='ffprobe -v error -show_format'
+
 # Command line head / tail shortcuts
 alias -g H='| head'
 alias -g T='| tail'
