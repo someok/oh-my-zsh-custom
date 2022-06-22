@@ -44,15 +44,6 @@ plugins=(
     colored-man-pages
     z
 
-    # `copydir` to copy the $PWD.
-    copydir
-
-    # `copyfile <filename>` to copy the file named `filename`
-    copyfile
-
-    # 使用 ctrl+o 拷贝当前命令
-    copybuffer
-
     # 类似 cd，不过可以记录历史，使用 scd -v 可方便切换
     scd
 
@@ -109,7 +100,16 @@ if [ "$(uname -s)" = "Darwin" ]; then
         #   cdf: 进入当前 finder 所在路径
         #   quick-look: 指定文件
         #   man-preview: 使用预览打开 man page
-        osx
+        macos
+
+        # `copydir` to copy the $PWD.
+        copydir
+
+        # `copyfile <filename>` to copy the file named `filename`
+        copyfile
+
+        # 使用 ctrl+o 拷贝当前命令
+        copybuffer
 
         youtube-dl
     )

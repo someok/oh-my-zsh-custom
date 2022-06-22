@@ -59,7 +59,6 @@
 -   sudo: 按两次 `ESC` 可在命令前面添加 `sudo`
 -   history: 增加几个查看历史的 alias: h, hs, hsi
 -   colored-man-pages: 给 man 页面着色
--   zsh_reload: 提供 `src` 命令用于重载 `zsh` 配置
 -   zsh-syntax-highlighting: 命令着色
 -   zsh-autosuggestions: 自动建议
 -   material-colors: 美化 `ls`、`ll` 输出的列表
@@ -85,7 +84,7 @@
 
 在 `.zshrc` 最后找的相应配置，然后删除。
 
-最后执行 `zsh` 重置配置即可。
+最后执行 `omz reload` 重置配置即可。
 
 另： `override/powerlevel9k.theme.sh` 为旧版配置，暂时保留，以后酌情删除。
 
