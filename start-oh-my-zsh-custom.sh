@@ -1,20 +1,5 @@
 # oh-my-zsh custom config
 
-# 初始定义系统常量
-# 调用示例：
-# 1、 [ -n "$OS_MAC" ] && XXX
-# 2、 if [ -n "$OS_MAC" ]; then
-#       XXX
-#     fi
-OS=$(echo $(uname) | tr '[:upper:]' '[:lower:]')
-
-[ "$OS" = "windowsnt" ] && OS_WIN="yes"
-[ "$OS" = "darwin" ] && OS_MAC="yes"
-[ "$OS" = "linux" ] && OS_LIN="yes"
-
-# root path
-SOMEOK_ZSH=${0:A:h}
-
 export ZSH=${SOMEOK_ZSH}/oh-my-zsh
 
 # history 数量
@@ -43,6 +28,8 @@ plugins=(
     history
     colored-man-pages
     z
+    rsync
+    man
 
     # 类似 cd，不过可以记录历史，使用 scd -v 可方便切换
     scd
