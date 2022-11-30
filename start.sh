@@ -9,7 +9,7 @@ OS=$(echo $(uname) | tr '[:upper:]' '[:lower:]')
 [ "$OS" = "windowsnt" ] && OS_WIN="yes"
 [ "$OS" = "darwin" ] && OS_MAC="yes"
 [ "$OS" = "linux" ] && OS_LIN="yes"
-[ $TERM_PROGRAM = "WarpTerminal" ] && IS_WRAP="yes"
+[ $TERM_PROGRAM ] && [ $TERM_PROGRAM = "WarpTerminal" ] && IS_WRAP="yes"
 
 # root path
 SOMEOK_ZSH=${0:A:h}
