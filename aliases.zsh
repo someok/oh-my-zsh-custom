@@ -25,7 +25,7 @@ alias -s bz2='tar -xjvf'
 
 alias dud='du -d 1 -h'
 alias duf='du -sh *'
-(($ + commands[fd])) || alias fd='find . -type d -name'
+# (($ + commands[fd])) || alias fd='find . -type d -name'
 alias ff='find . -type f -name'
 
 alias t='tail -f'
