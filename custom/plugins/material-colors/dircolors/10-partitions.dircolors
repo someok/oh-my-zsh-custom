@@ -1,0 +1,10 @@
+# Partition images
+.dmg         31
+.iso         31
+.bin         31
+.nrg         31
+.qcow        31
+.sparseimage 31
+.toast       31
+.vcd         31
+.vmdk        31

@@ -1,0 +1,15 @@
+# Executables
+EXEC 33;01
+
+# Scripts & exec
+*.cmd       33
+*.exe       33
+*.com       33
+*.btm       33
+*.bat       33
+*.sh        33
+*.bash      33
+*.csh       33
+*.zsh       33
+*.zsh-theme 33
+*.fish      33

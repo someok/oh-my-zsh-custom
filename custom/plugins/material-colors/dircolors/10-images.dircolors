@@ -1,0 +1,22 @@
+# Image formats
+*.jpg  35
+*.jpeg 35
+*.gif  35
+*.webp 35
+*.wma  35
+*.bmp  35
+*.pbm  35
+*.pgm  35
+*.ppm  35
+*.tga  35
+*.xbm  35
+*.xpm  35
+*.tif  35
+*.tiff 35
+*.png  35
+*.svg  35
+*.svgz 35
+*.mng  35
+*.pcx  35
+*.ico  35
+*.eps  35

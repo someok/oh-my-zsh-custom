@@ -1,0 +1,416 @@
+TERM Eterm
+TERM ansi
+TERM color-xterm
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM cons25
+TERM console
+TERM cygwin
+TERM dtterm
+TERM eterm-color
+TERM gnome
+TERM gnome-256color
+TERM jfbterm
+TERM konsole
+TERM kterm
+TERM linux
+TERM linux-c
+TERM mach-color
+TERM mlterm
+TERM putty
+TERM rxvt*
+TERM screen*
+TERM st
+TERM st-256color
+TERM terminator
+TERM vt100
+TERM xterm*
+
+# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+# Text color codes:
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# Background color codes:
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+
+NORMAL 00 # no color code at all
+FILE 00 # regular file: use no color at all
+RESET 0 # reset to "normal" color
+DIR 01;34 # directory
+LINK target # symbolic link. (If you set this to 'target' instead of a
+MULTIHARDLINK 00 # regular file with more than one link
+FIFO 40;33 # pipe
+SOCK 35 # socket
+DOOR 35 # door
+BLK 40;33;01 # block device driver
+CHR 40;33;01 # character device driver
+ORPHAN 40;31;01 # symlink to nonexistent file, or non-stat'able file ...
+MISSING 00 # ... and the files they point to
+SETUID 37;41 # file that is setuid (u+s)
+SETGID 30;43 # file that is setgid (g+s)
+CAPABILITY 30;41 # file with capability
+STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
+STICKY 37;44 # dir with the sticky bit set (+t) and not other-writable
+
+# executables (bright green)
+EXEC             33
+.cmd             33 
+.exe             33
+.com             33
+.btm             33
+.bat             33
+.sh              33
+.bash            33
+.csh             33
+.zsh             33
+.fish            33
+
+ # archives or compressed
+.tar             32
+.tgz             32
+.arc             32
+.arj             32
+.taz             32
+.lha             32
+.lz4             32
+.lzh             32
+.lzma            32
+.tlz             32
+.txz             32
+.tzo             32
+.t7z             32
+.zip             32
+.z               32
+.Z               32
+.dz              32
+.gz              32
+.lrz             32
+.lz              32
+.lzo             32
+.xz              32
+.zst             32
+.tzst            32
+.bz2             32
+.bz              32
+.tbz             32
+.tbz2            32
+.tz              32
+.ear             32
+.sar             32
+.rar             32
+.alz             32
+.ace             32
+.zoo             32
+.cpio            32
+.7z              32
+.rz              32
+.cab             32
+.wim             32
+.swm             32
+.dwm             32
+.esd             32
+.apk             32
+.gem             32
+
+# packaged apps
+.apk             33
+.deb             33
+.rpm             33
+.jad             33
+.jar             33
+.war             33
+.cab             33
+.pak             33
+.pk3             33
+.vdf             33
+.vpk             33
+.bsp             33
+.dmg             33
+
+# partition images
+.dmg             31
+.iso             31
+.bin             31
+.nrg             31
+.qcow            31
+.sparseimage     31
+.toast           31
+.vcd             31
+.vmdk            31
+
+# image formats
+.jpg             35
+.jpeg            35
+.mjpg            35
+.mjpeg           35
+.gif             35
+.webp            35
+.wma             35
+.bmp             35
+.pbm             35
+.pgm             35
+.ppm             35
+.tga             35
+.xbm             35
+.xpm             35
+.tif             35
+.tiff            35
+.png             35
+.svg             35
+.svgz            35
+.mng             35
+.pcx             35
+.ico             35
+.eps             35
+
+# video formats
+.mov             34
+.movie           34
+.mpg             34
+.mpeg            34
+.m2v             34
+.mkv             34
+.webm            34
+.ogm             34
+.mp4             34
+.m4v             34
+.mp4v            34
+.vob             34
+.qt              34
+.nuv             34
+.wmv             34
+.asf             34
+.rm              34
+.rmvb            34
+.flc             34
+.avi             34
+.fli             34
+.flv             34
+.gl              34
+.dl              34
+.xcf             34
+.xwd             34
+.yuv             34
+.cgm             34
+.emf             34
+.ogv             34
+.ogx             34
+.3g2             34
+.3gp             34
+.3gp2            34
+.3gpp            34
+
+# audio formats
+.aac             36
+.au              36
+.flac            36
+.m4a             36
+.mid             36
+.midi            36
+.mka             36
+.mp3             36
+.mpc             36
+.ogg             36
+.ra              36
+.wav             36
+.oga             36
+.opus            36
+.spx             36
+.xspf            36
+
+# document formats
+.doc             36
+.docx            36
+.odt             36
+
+# presentation formats
+.ppt             33
+.pptx            33
+.odp             33
+
+# spreadsheet formats
+.xlsx            34
+.xls             34
+.ods             34
+
+# book formats
+.pdf             36
+.djvu            36
+.epub            36
+
+## source formats
+.c               34
+.h               34
+.hpp             34
+.cc              34
+.cpp             34
+.cs              32
+.go              34
+.rs              33
+.java            31
+.pas             35
+.py              34
+.rb              31
+.erb             31
+.gemspec         31
+.ru              31
+.lua             35
+.xlt             32
+.sql             34
+.groovy          36
+.dsl             36
+.js              33
+.jsx             33
+.ts              33
+.tsx             33
+.coffee          33
+.php             34
+.css             32
+.sss             32
+.less            32
+.scss            32
+.sass            32
+.stylus          32
+.html            34
+.xhtml           34
+.htm             34
+.hjs             34
+.haml            34
+.slim            34
+.jade            34
+.pug             34
+.vue             32
+.scala           31
+.csv             32
+.json            34
+.yml             35
+.yaml            35
+.xml             35
+.md              31
+.markdown        31
+.latex           35
+.pl              33
+.hs              34
+.lhs             34
+
+# Special configs 
+*package.json    35
+*Gemfile         35
+*Rakefile        35
+*Makefile        35
+
+*node_modules    32
+
+*gulpfile.js     31
+*Gruntfile.js    33
+
+*.babelrc        33
+*.babel.js       33
+*.babelrc.js     33
+*.babel.json     33
+*.babelrc.json   33
+*babelrc         33
+*babel.js        33
+*babelrc.js      33
+*babel.json      33
+*babelrc.json    33
+
+*.eslintrc       35
+*.eslintrc.js    35
+*.eslintrc.json  35
+
+*bower.json      33
+
+*.git            33
+*.gitignore      33
+*.gitattributes  33
+*.gitmodules     33
+
+# Configs
+.cfg             36
+.conf            36
+.ini             36
+
+# encrypted data {{{1
+.asc             31
+.bfe             31
+.enc             31
+.gpg             31
+.signature       31
+.sig             31
+.p12             31
+.pem             31
+.pgp             31
+.asc             31
+.enc             31
+.sig             31
+.p7s             31
+*id_dsa          31
+*id_rsa          31
+*id_ecdsa        31
+*id_ed25519      31
+
+# SSH
+*known_hosts     36
+*config          36
+*authorized_keys 36
+
+# databases
+.db              35
+.sqlite3         35
+
+# fonts 
+.ttf             33
+.woff            33
+.woff2           33
+.afm             33
+.fon             33
+.fnt             33
+.pfb             33
+.pfm             33
+.otf             33
+
+# /etc/hosts.{deny,allow}
+.allow           32
+.deny            31
+
+# systemd
+# http://www.freedesktop.org/software/systemd/man/systemd.unit.html
+.service         34
+*@.service       34
+.socket          34
+.swap            34
+.device          34
+.mount           34
+.automount       34
+.target          34
+.path            34
+.timer           34
+.snapshot        34
+.slice           34
+
+# patch files
+.diff            30;41
+.patch           30;41
+
+# Libs
+.so              34
+.dll             34
+.class           34
+
+# other
+.log             37
+.zwc             37
+.log             37
+.lock            37
+.old             37
+.o               37
+*~               37

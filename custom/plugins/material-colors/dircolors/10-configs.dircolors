@@ -1,0 +1,12 @@
+# Configs
+.cfg  36
+.cnf  36
+.conf 36
+.ini  36
+
+# Special configs
+*Gemfile     4;35
+*Rakefile    4;35
+*Makefile    4;35
+*Cargo.toml  4;33
+*Vagrantfile 4;34
