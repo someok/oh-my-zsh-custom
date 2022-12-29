@@ -46,6 +46,6 @@
   "devDependencies": {
     "eclint": "^2.1.0",
     "markdownlint-cli": "^0.32.0",
-    "marked-man": "^0.7.0"
+    "marked-man": "^1.3.1"
   }
 }
