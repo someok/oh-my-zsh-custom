@@ -17,7 +17,11 @@ alias lsa='l'
 
 alias zshrc='${=EDITOR:-vim} ${ZDOTDIR:-$HOME}/.zshrc' # Quick access to the .zshrc file
 
-alias grep="grep --color=auto"
+if [[ "$(command -v ggrep)" ]]; then
+    alias grep="ggrep --color=auto"
+else
+    alias grep="grep --color=auto"
+fi
 
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
