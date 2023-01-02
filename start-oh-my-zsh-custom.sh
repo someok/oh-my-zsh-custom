@@ -45,8 +45,10 @@ plugins=(
     # colors 是 material-colors 的依赖，没有会报错
     colors
     material-colors
+
     zsh-syntax-highlighting
     zsh-autosuggestions
+    fzf-tab
     # history-search-multi-word
     # <<<<<<
 
