@@ -30,6 +30,13 @@ alias -s bz2='tar -xjvf'
 alias dud='du -d 1 -h'
 alias duf='du -sh *'
 [[ "$(command -v fd)" ]] || alias fd='find . -type d -name'
+
+if [[ "$(command -v fd)" ]]; then
+elif [[ "$(command -v fdfind)" ]]; then
+    alias fd="fdfind"
+else
+    alias fd='find . -type d -name'
+fi
 alias ff='find . -type f -name'
 
 alias t='tail -f'
