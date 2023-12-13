@@ -1,20 +1,5 @@
 alias cls='clear'
 
-# ls
-# ls 本身不做修改，否则可能导致部分 sh 脚本运行出错
-alias ll='ls -lhF --color --group-directories-first --time-style=+%Y-%m-%d\ %H:%M'
-alias lla='ll -A'
-alias l='ll -a'
-
-alias ls='ls --color'
-alias lS='ls -1FSsh'
-alias ldot='ls -ld .*'
-
-# 覆盖 oh-my-zsh/lib/directories.zsh 中配置
-alias la='lla'
-alias lsa='l'
-# ls end
-
 alias zshrc='${=EDITOR:-vim} ${ZDOTDIR:-$HOME}/.zshrc' # Quick access to the .zshrc file
 
 if [[ "$(command -v ggrep)" ]]; then

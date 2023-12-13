@@ -55,6 +55,9 @@ plugins=(
     # cht.sh
     cheatsh
 
+    # ls 或 lsd 的 alias
+    ls-lsd
+
     # ssh 自动完成
     ssh_config
 )
