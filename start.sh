@@ -15,7 +15,7 @@ OS=$(echo $(uname) | tr '[:upper:]' '[:lower:]')
 SOMEOK_ZSH=${0:A:h}
 
 if [ -n "$IS_WRAP" ]; then
-    echo "warp"
+    # echo "warp"
     source ${SOMEOK_ZSH}/start-warp.sh
 else
     source ${SOMEOK_ZSH}/start-oh-my-zsh-custom.sh
