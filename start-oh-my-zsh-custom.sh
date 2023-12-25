@@ -1,4 +1,5 @@
 # oh-my-zsh custom config
+[[ "$(command -v starship)" ]] && USE_STARSHIP="yes"
 
 export ZSH=${SOMEOK_ZSH}/oh-my-zsh
 
@@ -63,7 +64,7 @@ plugins=(
 )
 
 # linux or mac os x
-if [ "$(uname -s)" = "Darwin" ]; then
+if [ -n "$OS_MAC" ]; then
 
     # mac 上专用 plugin
     plugins=(
@@ -112,7 +113,11 @@ if [ "$(uname -s)" = "Darwin" ]; then
     fi
 else
     # linux
-    ZSH_THEME="someok-linux"
+    # ZSH_THEME="someok-linux"
+
+    if [ -z "$USE_STARSHIP" ]; then
+        ZSH_THEME="someok-linux"
+    fi
 
     # 关闭 linux 下的安全监测
     ZSH_DISABLE_COMPFIX=true
@@ -141,3 +146,8 @@ bindkey '^j' autosuggest-accept
 
 # 引入常用 aliases
 source ${SOMEOK_ZSH}/aliases.zsh
+
+if [ -n "$USE_STARSHIP" ]; then
+    # starship
+    eval "$(starship init zsh)"
+fi

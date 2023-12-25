@@ -1,12 +1,16 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# mac 上没有安装 starship 则默认启用
+if [ -z "$USE_STARSHIP" ]; then
+
+    # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+    # Initialization code that may require console input (password prompts, [y/n]
+    # confirmations, etc.) must go above this block; everything else may go below.
+    if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    fi
+
+    # 通过 p10k configure 生成
+    source $SOMEOK_ZSH/override/powerlevel10k.theme.sh
+
+    # 使得 Powerlevel10k 配置在 oh-my-zsh 中起效
+    source $SOMEOK_ZSH/modules/powerlevel10k/powerlevel10k.zsh-theme
 fi
-
-# 通过 p10k configure 生成
-source $SOMEOK_ZSH/override/powerlevel10k.theme.sh
-
-# 使得 Powerlevel10k 配置在 oh-my-zsh 中起效
-source $SOMEOK_ZSH/modules/powerlevel10k/powerlevel10k.zsh-theme
