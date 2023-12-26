@@ -28,7 +28,6 @@ plugins=(
     sudo
     history
     colored-man-pages
-    z
     rsync
     man
 
@@ -62,6 +61,12 @@ plugins=(
     # ssh 自动完成
     ssh_config
 )
+
+if [[ "$(command -v zoxide)" ]]; then
+    plugins=($plugins zoxide)
+else
+    plugins=($plugins z)
+fi
 
 # linux or mac os x
 if [ -n "$OS_MAC" ]; then
