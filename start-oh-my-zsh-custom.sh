@@ -49,6 +49,7 @@ plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
     fzf-tab
+    fd
     # history-search-multi-word
     # <<<<<<
 
