@@ -26,6 +26,9 @@ export FZF_CTRL_R_OPTS="
 
 # zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+
 # 增加 tmux 支持
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 zstyle ':fzf-tab:*' popup-min-size 80 12
@@ -36,15 +39,17 @@ zstyle ':completion:*:*:*:*:processes' command "ps -u $USER -o pid,user,comm,com
 zstyle ':fzf-tab:complete:kill:argument-rest' fzf-preview 'ps -p $word -o command= -w -w'
 zstyle ':fzf-tab:complete:kill:argument-rest' fzf-flags '--preview-window=down:3:wrap'
 
-# set descriptions format to enable group support
-zstyle ':completion:*:descriptions' format '[%d]'
-
 # 预览 cd 命令对应的目录内容
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd -l -F --group-directories-first --color always --header --icon always --blocks permission,name  --size short $realpath | head -100'
 
 # environment variable
 zstyle ':fzf-tab:complete:(-command-|-parameter-|-brace-parameter-|export|unset|expand):*' fzf-preview 'echo ${(P)word}'
 zstyle ':fzf-tab:complete:(-command-|-parameter-|-brace-parameter-|export|unset|expand):*' fzf-flags '--preview-window=wrap'
+
+# zstyle ':fzf-tab:complete:(-command-:|command:option-alias-rest):*' fzf-preview 'echo ${(P)word}'
+# zstyle ':fzf-tab:complete:(-command-:|command:option-alias-rest):*' fzf-flags '--preview-window=wrap'
+zstyle ':fzf-tab:complete:-command-:*' fzf-preview 'alias "${word}"'
+# zstyle ':fzf-tab:complete:-command-:*' fzf-preview 'echo $(command -v "$word")'
 
 # Homebrew
 zstyle ':fzf-tab:complete:brew-(install|uninstall|search|info):*-argument-rest' fzf-preview 'brew info $word'
