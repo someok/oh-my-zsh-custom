@@ -48,7 +48,6 @@ plugins=(
 
     zsh-syntax-highlighting
     zsh-autosuggestions
-    fzf-tab
     fd
     # history-search-multi-word
     # <<<<<<
@@ -61,6 +60,8 @@ plugins=(
 
     # ssh 自动完成
     ssh_config
+    fzf-tab
+    fzf-tab-source
 )
 
 if [[ "$(command -v zoxide)" ]]; then
