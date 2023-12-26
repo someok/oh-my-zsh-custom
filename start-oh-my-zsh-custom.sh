@@ -61,7 +61,7 @@ plugins=(
     # ssh 自动完成
     ssh_config
     fzf-tab
-    fzf-tab-source
+    fzf-tab-preview
 )
 
 if [[ "$(command -v zoxide)" ]]; then
