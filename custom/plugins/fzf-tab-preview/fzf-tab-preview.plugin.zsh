@@ -48,7 +48,7 @@ zstyle ':fzf-tab:complete:(-command-|-parameter-|-brace-parameter-|export|unset|
 
 # zstyle ':fzf-tab:complete:(-command-:|command:option-alias-rest):*' fzf-preview 'echo ${(P)word}'
 # zstyle ':fzf-tab:complete:(-command-:|command:option-alias-rest):*' fzf-flags '--preview-window=wrap'
-zstyle ':fzf-tab:complete:-command-:*' fzf-preview 'alias "${word}"'
+zstyle ':fzf-tab:complete:-command-:*' fzf-preview 'echo "${word}, ${group}"'
 # zstyle ':fzf-tab:complete:-command-:*' fzf-preview 'echo $(command -v "$word")'
 
 # Homebrew

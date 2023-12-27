@@ -62,6 +62,7 @@ plugins=(
     ssh_config
     fzf-tab
     fzf-tab-preview
+    # fzf-tab-source
 )
 
 if [[ "$(command -v zoxide)" ]]; then
@@ -76,6 +77,7 @@ if [ -n "$OS_MAC" ]; then
     # mac 上专用 plugin
     plugins=(
         $plugins
+        git
         git-open
         sublime
 
