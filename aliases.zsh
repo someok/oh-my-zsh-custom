@@ -15,6 +15,8 @@ alias -s bz2='tar -xjvf'
 alias dud='du -d 1 -h'
 alias duf='du -sh *'
 
+alias cdh='scd -v'
+
 if [[ "$(command -v fd)" ]]; then
 elif [[ "$(command -v fdfind)" ]]; then
     alias fd="fdfind"
