@@ -71,6 +71,10 @@ else
     plugins=($plugins z)
 fi
 
+if (( $+commands[yazi] )); then
+    plugins=($plugins yazi)
+fi
+
 # linux or mac os x
 if [ -n "$OS_MAC" ]; then
 
