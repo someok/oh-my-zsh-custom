@@ -1,0 +1,4 @@
+# Patch files
+*.diff  30;41
+*.patch 30;41
+

@@ -44,7 +44,7 @@ plugins=(
 
     # colors 是 material-colors 的依赖，没有会报错
     colors
-    material-colors
+    dircolors-neutral
 
     zsh-syntax-highlighting
     zsh-autosuggestions
