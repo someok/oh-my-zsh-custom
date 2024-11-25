@@ -17,6 +17,9 @@ alias duf='du -sh *'
 
 alias cdh='scd -v'
 
+[[ "$(command -v batcat)" ]] && alias bat='batcat'
+
+
 if [[ "$(command -v fd)" ]]; then
 elif [[ "$(command -v fdfind)" ]]; then
     alias fd="fdfind"
