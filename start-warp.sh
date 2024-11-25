@@ -45,43 +45,47 @@ plugins=(
     # ls 或 lsd 的 alias
     ls-lsd
 
-    git-open
-    sublime
-
-    docker
-    volta
-
-    # 自动查找当前目录是否存在 gradlew 或是全局安装的 gradle
-    # 支持自动完成
-    gradle
-
     # 通过 ccat、cless 高亮显示文件，需预先安装 pip install Pygments
     colorize
-
-    # SDKMAN 自动提示
-    sdk
-
-    # 可以通过一些命令打开或返回 finder 路径
-    # 例如
-    #   ofd: 通过 finder 打开当前目录
-    #   pfd: 返回当前 finder 打开的路径
-    #   pfs: 返回当前 finder 选择的路径或文件
-    #   cdf: 进入当前 finder 所在路径
-    #   quick-look: 指定文件
-    #   man-preview: 使用预览打开 man page
-    macos
-
-    # `copypath` to copy the $PWD.
-    copypath
-
-    # `copyfile <filename>` to copy the file named `filename`
-    copyfile
 )
 
 if [[ "$(command -v zoxide)" ]]; then
     plugins=($plugins zoxide)
 else
     plugins=($plugins z)
+fi
+
+if [ -n "$OS_MAC" ]; then
+    # mac 上专用 plugin
+    plugins=(
+        $plugins
+        git-open
+        sublime
+        volta
+
+        # 自动查找当前目录是否存在 gradlew 或是全局安装的 gradle
+        # 支持自动完成
+        gradle
+
+        # SDKMAN 自动提示
+        sdk
+
+        # 可以通过一些命令打开或返回 finder 路径
+        # 例如
+        #   ofd: 通过 finder 打开当前目录
+        #   pfd: 返回当前 finder 打开的路径
+        #   pfs: 返回当前 finder 选择的路径或文件
+        #   cdf: 进入当前 finder 所在路径
+        #   quick-look: 指定文件
+        #   man-preview: 使用预览打开 man page
+        macos
+
+        # `copypath` to copy the $PWD.
+        copypath
+
+        # `copyfile <filename>` to copy the file named `filename`
+        copyfile
+    )
 fi
 
 # 此处开始正式载入 oh-my-zsh 配置
