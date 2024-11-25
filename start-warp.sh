@@ -26,7 +26,6 @@ plugins=(
     extract
     history
     colored-man-pages
-    z
     rsync
     man
 
@@ -78,6 +77,12 @@ plugins=(
     # `copyfile <filename>` to copy the file named `filename`
     copyfile
 )
+
+if [[ "$(command -v zoxide)" ]]; then
+    plugins=($plugins zoxide)
+else
+    plugins=($plugins z)
+fi
 
 # 此处开始正式载入 oh-my-zsh 配置
 source $ZSH/oh-my-zsh.sh

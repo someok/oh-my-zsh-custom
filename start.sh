@@ -10,14 +10,16 @@ OS=$(echo $(uname) | tr '[:upper:]' '[:lower:]')
 [ "$OS" = "darwin" ] && OS_MAC="yes"
 [ "$OS" = "linux" ] && OS_LIN="yes"
 
-[ $TERM_PROGRAM ] && [ $TERM_PROGRAM = "WarpTerminal" ] && IS_WRAP_LIKE="yes"
-# [ $TERMINAL_EMULATOR ] && [ $TERMINAL_EMULATOR = "JetBrains-JediTerm" ] && IS_WRAP_LIKE="yes"
+# 目前 IDEA、WebStorm 的新终端效果尚未达到我愿意切换的程度，所以暂时不启用
+[ -n "$OS_MAC" ] && [[ ($TERM_PROGRAM && $TERM_PROGRAM = "WarpTerminal") ]] && WRAP_STYLE="yes"
+# [ -n "$OS_MAC" ] && [[ ($TERM_PROGRAM && $TERM_PROGRAM = "WarpTerminal") || ($TERMINAL_EMULATOR && $TERMINAL_EMULATOR="JetBrains-JediTerm") ]] && WRAP_STYLE="yes"
+echo "WRAP_STYLE = $WRAP_STYLE"
 
 # root path
 SOMEOK_ZSH=${0:A:h}
 
-if [ -n "$IS_WRAP_LIKE" ]; then
-    # echo "warp like"
+if [ -n "$WRAP_STYLE" ]; then
+    # echo "warp"
     source ${SOMEOK_ZSH}/start-warp.sh
 else
     source ${SOMEOK_ZSH}/start-oh-my-zsh-custom.sh
