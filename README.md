@@ -13,7 +13,7 @@
 
 -   zsh
 -   git
--   Mac OS X: [Nerd fonts](https://github.com/ryanoasis/nerd-fonts)
+-   Mac OS X: [Nerd fonts](https://www.nerdfonts.com/)
 -   Linux: none
 
 ## 安装步骤
@@ -89,7 +89,7 @@
 ## 更新方式
 
 -   git 更新:
-    > git fetch && git pull
+    > git pull
 -   submodule 更新:
     > git submodule update --remote --recursive
 -   submodule 初始化:
