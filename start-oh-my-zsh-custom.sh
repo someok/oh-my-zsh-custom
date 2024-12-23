@@ -117,8 +117,6 @@ if [ -n "$OS_MAC" ]; then
 
         # 使用 ctrl+o 拷贝当前命令
         copybuffer
-
-        youtube-dl
     )
 
     MAC_OVERRIDE_FILE=$SOMEOK_ZSH/override/mac.sh
