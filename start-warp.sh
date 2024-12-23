@@ -23,6 +23,7 @@ DISABLE_LS_COLORS=true
 
 plugins=(
     # oh-my-zsh 自带插件
+    aliases
     extract
     history
     colored-man-pages
@@ -46,7 +47,7 @@ plugins=(
     ls-lsd
 
     # 通过 ccat、cless 高亮显示文件，需预先安装 pip install Pygments
-    colorize
+    # colorize
 )
 
 if [[ "$(command -v zoxide)" ]]; then

@@ -24,6 +24,7 @@ DISABLE_LS_COLORS=true
 
 plugins=(
     # oh-my-zsh 自带插件
+    aliases
     extract
     sudo
     history
@@ -48,7 +49,6 @@ plugins=(
 
     zsh-syntax-highlighting
     zsh-autosuggestions
-    fd
     # history-search-multi-word
     # <<<<<<
 
@@ -59,7 +59,9 @@ plugins=(
     ls-lsd
 
     # ssh 自动完成
-    ssh_config
+    ssh
+    # ssh_config # todo: 待删除
+
     fzf-tab
     fzf-tab-preview
 )
