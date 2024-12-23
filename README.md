@@ -7,7 +7,7 @@
 
 这么搞的好处是只需要在 clone 一份，然后在各个用户的 `.zshrc` 下面配置一下 source 指向即可。具体可参见下面的 `安装步骤`。
 
-配置很简单，具体可参见 [oh-my-zsh-custom.sh](oh-my-zsh-custom.sh)
+支持 Mac 终端、iTerm 风格和 Warp、JetBrains 新终端风格，具体实现可参见 [start.sh](start.sh)
 
 ## Requirements
 
@@ -20,7 +20,7 @@
 
 ### git clone
 
-> git clone --recursive https://github.com/someok/oh-my-zsh-custom.git
+> git clone --recurse-submodules https://github.com/someok/oh-my-zsh-custom.git
 
 ### .zshrc
 
@@ -54,7 +54,7 @@
 
 ## plugins 功能概述
 
--   z: 支持 `z` 跳转，类似 `autojump`
+-   zoxide/z: 支持 `z` 跳转，类似 `autojump`，优先采用 `zoxide`
 -   extract: 解压命令，可根据扩展名自动执行相应解压命令，alias 为 `x`
 -   sudo: 按两次 `ESC` 可在命令前面添加 `sudo`
 -   history: 增加几个查看历史的 alias: h, hs, hsi
@@ -72,10 +72,8 @@
 -   git-open: 在 git 目录下通过 `git open` 在浏览器打开项目的 GitHub 页面
 -   sublime: `st` 可打开给定文件，`stt` 可将当前所在文件夹发送到 sublime
 -   gradle: 支持 `gradle` 自动完成
--   colorize: 通过 ccat、cless 高亮显示文件，需预先安装 pip install Pygments
 -   sdk: SDKMAN 自动提示
--   osx: 可以通过一些命令打开或返回 finder 路径
--   youtube-dl: `youtube-dl` 的一些 `alias`，另外增加命令 `ydf` 用于载入所有可选编码
+-   macos: 可以通过一些命令打开或返回 finder 路径
 
 ## Powerlevel10k 配置
 
