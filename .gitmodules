@@ -4,3 +4,6 @@
 [submodule "modules/powerlevel10k"]
 	path = modules/powerlevel10k
 	url = git@github.com:romkatv/powerlevel10k.git
+[submodule "custom/plugins/dircolors-neutral"]
+	path = custom/plugins/dircolors-neutral
+	url = git@github.com:zpm-zsh/dircolors-neutral.git
